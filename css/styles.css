@@ -21,3 +21,9 @@
   height: 700px;
   width: 100%;
 }
+
+.modal-content{
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
