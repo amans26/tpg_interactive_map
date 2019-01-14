@@ -128,7 +128,7 @@
                     </g>
                 </svg>
 
-            <div class="modal fade" id="myModal" role="dialog" id="region">
+            <div class="modal fade" role="dialog" id="region">
                     <div class="modal-dialog">
                     
                       <!-- Modal content-->
@@ -156,8 +156,9 @@
       <script>
          jQuery(function($){
 
-            jQuery("svg a").on("click",function(){
-
+            jQuery("svg a").on("click",function(e){
+                e.preventDefault();
+                $("#region").modal('show');
                    
             });
 
