@@ -151,13 +151,20 @@
       <script>
          jQuery(function($){
 
+
+         function  loadRegion(path){
+
+            $("#region svg").html(path);
+            $("#region").modal('show');
+
+         }
+
             jQuery("svg a").on("click",function(e){
                 e.preventDefault();
 
                 var path = $(this).html();
-
-                $("#region svg").html(path);
-                $("#region").modal('show');
+                loadRegion(path);
+               
                    
             });
 
