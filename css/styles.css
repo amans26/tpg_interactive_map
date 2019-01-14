@@ -1,6 +1,8 @@
-.container{
-    margin:auto;
+.map{
+    margin: auto;
     background: #000;
+    text-align: center;
+    width: 70%;
 }
 
 .land
@@ -15,11 +17,6 @@
 .land:hover{
 
     fill: rgb(0, 93, 170);
-}
-
-.container svg{
-  height: 700px;
-  width: 100%;
 }
 
 .modal-content{
